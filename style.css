@@ -313,12 +313,286 @@ margin: 0;
 flex-wrap: wrap;
 }
 
-.about-me-content{
+/* about-me */
+.about-me{
+    max-height: 508px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+
+.about-me-text{
+    max-width: 515px;
+    max-height: 376px;
+}
+
+.about-me-image{
+    max-width: 343px;
+}
+
+/* contacts */
+
+.contacts-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top:45px;
+}
+.contacts-content p { 
+    max-width: 505px;
+    margin-top:0;
+}
+.contacts-details-wrapper{
+    border: 1px solid var(--gray);    
+    padding:16px;
+}
+
+.contacts-details-wrapper h4{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.contact{
+    color: var(--gray);
+    display:flex;
+    gap:9px;
+    align-items: center;
+    margin-top:8px;
+}
+
+/* footer section */
+footer{
+    border-top: 1px solid var(--gray);
+    margin-top: 145px;
+    padding: 32px 0;
+}
+.footer-container{
+    max-width: 1024px;
+    margin:0 auto;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    gap: 9px;
 }
-.about-me-text{
-    width: 515px;
+.footer-logo h4{
+    margin: 0;
+}
+
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-wrapper a{
+ color: var(--gray);
+ font-weight: 400;
+}
+
+.footer-info p{
+    color: var(--white);
+    margin-top: 16px;
+    padding:0;
+}
+
+.footer-media h3{
+    margin-top: 0px;
+    margin-bottom:12px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+
+/* works-page-title */
+
+.hero-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:68px;
+}
+
+
+.parent-header{
+    margin-top:53px;
+    display:flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.parent-header h2{
+    margin:0;
+    padding:0;
+}
+.parent-header p{
+    margin:0;
+    padding:0;
+}
+.parent-header h2:before{
+    content: "/";
+    color: var(--primary);
+}
+
+.complete-card-section {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.section-header2 h3{
+    font-weight: 500;
+    font-size:larger;
+    margin:0;
+    padding:0;
+
+}
+.section-header2 h3:before{
+    content: "#";
+    color: var(--primary);
+}
+
+
+
+/* small-project-section */
+.small-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+}
+
+
+.small-projects-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+}
+
+.small-projects-row{
+    display: flex;
+    gap:8px;
+    align-items: start;
+}
+
+.small-projects-card{
+    border: 1px solid var(--gray);
+    max-width: 331px;
+    max-height: 232px;    
+}
+
+    .small-projects-card ul{
+        color: var(--gray);
+        display: flex;
+        gap:8px;
+        margin:0;
+        padding:8px;
+        border-bottom: 1px solid var(--gray);
+        font-weight: 400;
+        
+    }
+
+    .small-projects-card h3,p{
+        margin:0px;
+        padding: 8px 16px;
+    }
+
+    .btn-wrapper{
+
+        padding:8px 16px;
+    }
+
+    /* small-projects-grid-testing */
+
+    .small-projects-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:8px;
+    }
+
+    .small-projects-card1{
+        border: 1px solid var(--gray);
+    }
+
+    .small-projects-card1 ul{
+        color: var(--gray);
+        display: flex;
+        gap:8px;
+        margin:0;
+        padding:8px;
+        border-bottom: 1px solid var(--gray);
+        font-weight: 400;
+        
+    }
+
+    .small-projects-card1 h3{
+        margin:0px;
+        padding: 8px 16px;
+    }
+/* About-Me-Page */
+
+
+.about-me-wrapper{
+    max-width: 1024px;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.about-me-page-content{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.about-me-page-content p{
+    max-width: 515px;
+}
+
+
+/* .about-me-skills */
+.about-me-skills{
+    display: flex;
+    flex-direction: column;
+    gap:48px
+}
+.skills-content2{
+    display: flex;
+    align-items: start;
+    gap:16px;
+}
+
+/* fun-facts-section */
+.fun-facts-section{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.fun-facts-content{
+    display: flex;
+    justify-content: space-between;
+    gap:156px;
+}
+.div-wrapper{
+    color:var(--gray);
+    gap:16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-wrapper div{
+    border: 1px solid var(--gray);
+    align-content: center;
+    font-weight: 400;
 }

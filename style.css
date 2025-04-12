@@ -596,3 +596,52 @@ footer{
     align-content: center;
     font-weight: 400;
 }
+
+/* Contacts-page */
+.contacts-main-container{
+    display: flex;
+    flex-direction: column;
+    gap:46px;
+    max-width: 1024px;;
+    margin:0 auto;
+}
+
+.contacts-content{
+    display: flex;
+    align-content: start;
+}
+.contacts-content p{
+    margin:0;
+    padding:0;
+}
+.contact-info{
+    display: flex;
+    gap:11px;
+}
+.support-me-info{
+    border: 1px solid var(--gray);
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:16px;
+    align-items: center;
+}
+.support-me-info h4{
+    margin:0;
+
+}
+.support-me-info p{
+    margin-top:8px;
+
+}
+.media-content-wrapper{
+    display: flex;
+    margin-top: 27.5px;
+    gap:22px;
+}
+.media-content-wrapper div{
+    display: flex;
+    align-items: center;
+    
+}

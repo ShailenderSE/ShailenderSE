@@ -10,7 +10,7 @@ header{
     max-width: 1024px;
     margin: 0 auto;
 }
-@media (max-width:480px){
+@media (max-width:1024px){
     .navbar{
         padding:16px;
         padding-bottom: 0;
@@ -19,7 +19,6 @@ header{
         padding:0;
     }
 }
-
 
 .logo-wrapper{
     display: flex;
@@ -43,6 +42,7 @@ header{
     display:flex;
     gap:32px;
 }
+
 @media (max-width:480px){
     .nav-list{
         display: none;
@@ -80,7 +80,7 @@ header{
     margin-top: 62px;
 }
 
-@media (max-width:480px){
+@media (max-width:1024px){
     .main-container{
        padding: 16px;
     }   
@@ -109,7 +109,7 @@ header{
     padding: 0;
 }
 
-@media (max-width:480px){
+@media (max-width:1024px){
     .hero-content p{
         padding:0;
     }
@@ -123,7 +123,6 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
 
 .portfolio-note-wrapper{
     display: flex;
@@ -150,7 +149,6 @@ header{
 }
 
 .portfolio-note{
-    
     font-size: 16px;
     margin: 0px;
 }
@@ -181,8 +179,8 @@ header{
     position: absolute;
     color: var(--gray);
     font-style: italic;
-    
 }
+
 .quote blockquote::before{
     top: -8px;
 }
@@ -213,7 +211,6 @@ header{
 }
 
 /*social-links*/
-
 .social-links{
     position:fixed; 
     display: flex;
@@ -236,14 +233,18 @@ header{
     .burger-icon{
         display:block;
     }
-    
+}
+
+@media (max-width:1024px){
+    .social-links{
+        display: none;
+    }
 }
 
 .social-links-line{
     width: 1px; 
     height:191px;
     background-color: var(--primary);
-    
 }
 .social-links ul{    
     margin:0;
@@ -289,24 +290,23 @@ header{
     transform: translate(100%, -50%);
     
 }
-@media (max-width:480px){
+@media (max-width:1024px){
     .section-header h2::after{
         display: none;
     }
 }
 
-
-
 .section-header a {
     color:var(--white);
- 
 }
+
 .projects-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:16px;
     align-items: start;
 }
+
 @media (max-width:480px) {
     .projects-cards{
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -382,6 +382,12 @@ header{
     }
 }
 
+@media (max-width:1024px) {
+    .img-skills{
+        display: none;
+    }
+}
+
 .skill-group{
      display: flex;
      flex-direction: column;
@@ -397,7 +403,6 @@ header{
     padding: 8px;
     border-bottom: 1px solid var(--gray);
     margin: 0;
-
 }
 
 .skill-category ul{
@@ -413,7 +418,6 @@ flex-wrap: wrap;
     .skill-category{
         width: 100%;
     }
-    
 }
 
 
@@ -421,6 +425,7 @@ flex-wrap: wrap;
 .about-me{
     max-width: 1024px;
 }
+
 .about-me h2{
     margin:0;
 }
@@ -439,12 +444,15 @@ flex-wrap: wrap;
     max-height: 376px;
     align-content: center;
 }
+
 .about-me-text p{
     padding:0;
     margin-bottom: 27px;
 }
+
 .about-me-image{
     max-width: 343px;
+
 }
 
 @media (max-width:480px) {
@@ -459,8 +467,17 @@ flex-wrap: wrap;
     }
 }
 
-/* contacts */
 
+@media (max-width:1024px) {
+    .about-me-content img{
+        max-height: 350px;
+    }
+    .about-me-text{
+        margin-top:32px;
+    }
+}
+
+/* contacts */
 .contacts-content{
     display: flex;
     justify-content: space-between;
@@ -493,12 +510,7 @@ flex-wrap: wrap;
         flex-direction: column;
         gap:10px;
     }
-
-    
 }
-
-
-
 
 /* footer section */
 footer{
@@ -520,6 +532,10 @@ footer{
     flex-direction: column;
     gap:16px;
     }
+    
+}
+
+@media (max-width:1024px){
     .footer-container{
         padding:16px;
     }
@@ -624,11 +640,9 @@ footer{
     .about-me-details img{
         display: none;
     }
-    
-}
+ }
+ 
 /* newcontentend */
-
-
 .section-header2 h3{
     font-weight: 500;
     font-size:larger;
@@ -641,8 +655,6 @@ footer{
     color: var(--primary);
 }
 
-
-
 /* small-project-section */
 .small-projects {
     display: flex;
@@ -650,7 +662,6 @@ footer{
     gap: 48px;
 
 }
-
 
 .small-projects-content{
     display: flex;
@@ -758,6 +769,7 @@ footer{
 
 
 /* .about-me-skills */
+
 .about-me-skills{
     display: flex;
     flex-direction: column;
@@ -778,9 +790,15 @@ footer{
 @media (max-width:480px) {
     .skills-content2{
         flex-direction: column;
-
     }
 }
+
+@media (max-width:1024px) {
+    .skills-content2{
+        flex-wrap: wrap;
+    }
+}
+
 /* fun-facts-section */
 .fun-facts-section{
     display: flex;
@@ -814,6 +832,12 @@ footer{
     }
     .div-wrapper div{
         width:100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .fun-facts-section img{
+        display:none;
     }
 }
 
